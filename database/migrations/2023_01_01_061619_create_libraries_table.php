@@ -1,0 +1,39 @@
+<?php
+
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('libraries', function (Blueprint $table) {
+            $table->id();
+            $table->string('user_id');
+            $table->foreignId('cart_id');
+            $table->string('game_id');
+            $table->string('game_title');
+            $table->string('game_image')->nullable()->default('-');
+            $table->string('game_platform');
+            $table->text('game_description');
+            
+            $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('libraries');
+    }
+};
