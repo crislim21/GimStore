@@ -46,7 +46,7 @@
 
                     @foreach ($games as $game)
                         <div class="col mb-5">
-                            <div class="card h-100 ">
+                            <div class="card h-100">
                                 <!-- Product image-->
                                 <img class="card-img-top img-fluid" src="{{ $game->image }}" style="height:170px;"
                                     alt="..." />
