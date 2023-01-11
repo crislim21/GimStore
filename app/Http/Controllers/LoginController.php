@@ -28,6 +28,9 @@ class LoginController extends Controller
             }
 
             $request->session()->regenerate();
+            if(Auth::user()->role == 'admin') {
+                return redirect()->intended('/admin/home')->with('success', 'Welcome back, '.Auth::user()->username);
+            }
             return redirect()->intended('/');
         }
         return back()->with('loginError', 'Username or password is incorrect');
