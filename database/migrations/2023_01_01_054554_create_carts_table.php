@@ -19,7 +19,8 @@ return new class extends Migration
             $table->foreignId('user_id');
             $table->string('game_title');
             $table->string('game_image')->nullable();
-            $table->string('game_platform');
+            $table->string('game_developer');
+            $table->string('game_publisher');
             $table->text('game_description');
             $table->unsignedBigInteger('game_price');
             $table->unsignedBigInteger('total_price');

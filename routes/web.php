@@ -32,6 +32,7 @@ Route::get('/home', function () {
 })->middleware('isUser');
 
 Route::get('/browse', [BrowseController::class, 'index'])->middleware('isUser');
+Route::get('/game/{game:id}', [BrowseController::class, 'detail'])->middleware('isUser');
 
 Route::get('/cart', [CartController::class, 'index'])->middleware('isUser');
 Route::post('/cart/store/{id}', [CartController::class, 'store'])->name('cart.store')->middleware('isUser');

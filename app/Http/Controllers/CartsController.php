@@ -55,6 +55,8 @@ class CartControllers extends Controller
             $cart->product_name = $product->title;
             $cart->image = $product->image;
             $cart->price = $product->price;
+            $cart->developer = $product->developer;
+            $cart->publisher = $product->publisher;
             $cart->quantity = $request->quantity;
             $cart->sub_total = $cart->price * $cart->quantity;
             $cart->save();

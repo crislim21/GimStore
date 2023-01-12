@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
-
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
 
     <!-- Load fonts style after rendering the layout styles -->
@@ -66,20 +67,20 @@
                                 <!-- Product actions-->
                                 <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
                                     <div class=" d-flex justify-content-around">
+
+                                        <div class="text-center">
+                                            <a href="/game/{{ $game->id }}" class="btn btn-outline-dark mt-auto">
+                                                View
+                                            </a>
+                                        </div>
+
+
                                         <form action="{{ route('cart.store', $game->id) }}" method="post"
                                             enctype="multipart/form-data">
                                             @csrf
                                             <div class="text-center">
-                                                <button type="submit" class="btn btn-outline-dark mt-auto">View</button>
-
-                                            </div>
-                                        </form>
-
-                                        <form action="{{ route('cart.store', $game->id) }}" method="post"
-                                            enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="text-center">
-                                                <button type="submit" class="btn btn-outline-dark mt-auto">Add to Cart</button>
+                                                <button type="submit" class="btn btn-outline-dark mt-auto">Add to
+                                                    Cart</button>
 
                                             </div>
                                         </form>

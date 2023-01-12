@@ -12,4 +12,11 @@ class BrowseController extends Controller
             'games' => Game::paginate(12)
         ]);
     }
+
+    public function detail(Game $game) {
+        // dd($game);
+        return view('product_detail',[
+            'game' => $game
+        ]);
+    }
 }

@@ -34,7 +34,7 @@ class CartController extends Controller
     }
 
     public function store(Request $request,$id) {
-
+        // Used
         if(Auth::id()) {
             $user = Auth::user();
             $product = Game::find($id);
@@ -46,7 +46,8 @@ class CartController extends Controller
             $cart->game_title = $product->title;
             $cart->game_image = $product->image;
             $cart->game_description = $product->description;
-            $cart->game_platform = $product->platform;
+            $cart->game_developer = $product->developer;
+            $cart->game_publisher = $product->publisher;
             $cart->game_price = $product->price;
             $cart->total_price = $cart->total_price + $product->price;
             $cart->save();

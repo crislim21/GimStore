@@ -18,7 +18,8 @@ return new class extends Migration
             $table->string('title');
             $table->text('description');
             $table->string('image')->nullable();
-            $table->string('platform');
+            $table->string('developer');
+            $table->string('publisher');
             $table->unsignedBigInteger('price');
             $table->timestamp('published_at')->nullable();
             $table->timestamps();
