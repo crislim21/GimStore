@@ -11,8 +11,13 @@
                     {{ session('success') }}
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
+            @elseif(session()->has('fail'))
+                <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                    {{ session('fail') }}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
             @endif
-            <form action="/search">
+            <form action="/admin/home">
                 <div class="input-group mb-3">
                     <input type="text" class="form-control" placeholder="Search Product Name" name="search"
                         value="{{ request('search') }}">
@@ -33,8 +38,8 @@
                         <div class="col mb-5">
                             <div class="card h-100 ">
                                 <!-- Product image-->
-                                <img class="card-img-top img-fluid" src="{{ $game->image }}" style="height:170px;"
-                                    alt="..." />
+                                <img class="card-img-top img-fluid" src="{{ asset('/storage/' . $game->image) }}"
+                                    style="height:170px;" alt="..." />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
                                     <div class="text-center">
@@ -50,30 +55,32 @@
                                 </div>
                                 <!-- Product actions-->
                                 <div class="card-footer p-0 pt-0 border-top-0 bg-transparent mx-2">
-                                    <div class=" d-flex flex-wrap justify-content-start">
-                                        <form action="{{ route('cart.store', $game->id) }}" method="post"
-                                            enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="text-center me-3">
+                                    <div class=" d-flex flex-wrap justify-content-center">
+
+                                        <div class="text-center me-3">
+                                            <a href="/admin/view/{{ $game->id }}">
                                                 <button type="submit" class="btn btn-outline-dark mt-auto">View</button>
+                                            </a>
 
-                                            </div>
-                                        </form>
+                                        </div>
 
-                                        <form action="{{ route('cart.store', $game->id) }}" method="post"
-                                            enctype="multipart/form-data">
-                                            @csrf
-                                            <div class="text-center ms-2">
+
+
+                                        <div class="text-center ms-2">
+                                            <a href="/admin/game/{{ $game->id }}">
                                                 <button type="submit" class="btn btn-dark mt-auto">Update item</button>
+                                            </a>
 
-                                            </div>
-                                        </form>
+                                        </div>
 
-                                        <form action="{{ route('cart.store', $game->id) }}" method="post"
+
+                                        <form action="/admin/delete/{{ $game->id }}" method="post"
                                             enctype="multipart/form-data" class="w-100">
                                             @csrf
+                                            @method('delete')
                                             <div class="text-center my-2">
-                                                <button type="submit" class="btn btn-danger mt-auto w-100">Delete</button>
+                                                <button type="submit" class="btn btn-danger mt-auto w-100"
+                                                    onclick="return confirm('Are you sure delete this game ?')">Delete</button>
 
                                             </div>
                                         </form>

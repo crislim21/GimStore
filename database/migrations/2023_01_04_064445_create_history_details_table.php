@@ -20,10 +20,12 @@ return new class extends Migration
             $table->foreignId('game_id');
             $table->foreignId('history_header_id');
             $table->string('game_title');
-            $table->string('image')->nullable()->default('-');
-            $table->unsignedBigInteger('quantity');
-            $table->unsignedBigInteger('price');
-            $table->unsignedBigInteger('total');
+            $table->string('game_image')->nullable()->default('-');
+            $table->text('game_description');
+            $table->string('game_developer');
+            $table->string('game_publisher');
+            $table->unsignedBigInteger('game_price');
+            $table->unsignedBigInteger('total')->default(0);
             $table->timestamps();
         });
     }

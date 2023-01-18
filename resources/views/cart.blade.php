@@ -35,7 +35,7 @@
     @endif
 
     @if ($games->count())
-        <h1 style="margin-left: 250px; margin-top: 70px; margin-bottom: 25px" >My Chart</h1>
+        <h1 style="margin-left: 250px; margin-top: 70px; margin-bottom: 25px">My Cart</h1>
         <div class="container" style="margin-top: 10px">
             <div class="row ">
                 <div class="col-md-8">
@@ -43,7 +43,8 @@
                         <div class="card mb-3 w-auto border-0" style="background-color: #272727; ">
                             <div class="row g-0 align-items-center">
                                 <div class="col-md-4" style="padding: 20px 20px 20px 20px;">
-                                    <img style="width: 300px; height: auto;" src="{{ $item->game_image }}" class=" img-fluid rounded" alt="...">
+                                    <img style="width: 300px; height: auto;" src="{{ $item->game_image }}"
+                                        class=" img-fluid rounded" alt="...">
                                     @php
                                         $count = 0;
                                         $count += $item->game_price;
@@ -52,11 +53,26 @@
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h3 class="card-title" style="margin-top: 10px;">{{ $item->game_title }}</h3>
-                                        <p style="color: #a0a0a0; margin-top: 10px;" class="fw-bolder card-text fs-6">{{ $item->game_description }}</p>
-                                        <h4>Rp. {{ number_format($item->game_price) }}</h4>
-                                        <p class="text-end">
-                                            <a style="color: #a0a0a0;" class="text-decoration-underline fs-6" href="">Remove</a>
-                                        </p>
+                                        <p style="color: #a0a0a0; margin-top: 10px;" class="fw-bolder card-text fs-6">
+                                            {{ $item->game_description }}</p>
+                                        @if ($item->game_price == 0)
+                                            <h4>Free</h4>
+                                        @else
+                                            <h4>Rp. {{ number_format($item->game_price) }}</h4>
+                                        @endif
+
+                                        <div class="d-flex justify-content-end">
+                                            <form action="/cart/remove/{{ $item->id }}" method="POST">
+                                                @csrf
+                                                @method('delete')
+                                                <button class="btn text-decoration-underline fs-6"
+                                                    style="color: #a0a0a0;"
+                                                    onclick="return confirm('Are you sure delete this product from Cart ?')">
+                                                    Remove
+                                                </button>
+                                            </form>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -68,24 +84,35 @@
                         <div class="card-body">
                             @php
                                 $total = 0;
+                                $tax = 0;
+                                $subtotal = 0;
                             @endphp
                             @foreach ($games as $item)
                                 @php
                                     $total += $item->game_price;
                                 @endphp
                             @endforeach
+                            @php
+                                $tax = $total * 0.01;
+                                $subtotal = $total + $tax;
+                            @endphp
                             <h1>Games and Hardware Summary</h1>
-                            <div class="row" style="padding-bottom: 50px;">
+                            <div class="row" style="padding-bottom: 10px;">
                                 <div class="col-sm-8">price</div>
-                                <div class="col-sm-4">Rp.{{ $total }}</div>
+                                <div class="col-sm-4">Rp. {{ number_format($total) }}</div>
+                            </div>
+                            <div class="row" style="padding-bottom: 10px;">
+                                <div class="col-sm-8">tax 1%</div>
+                                <div class="col-sm-4">Rp. {{ number_format($tax) }}</div>
                             </div>
                             <hr>
                             <div class="row">
                                 <div class="col-sm-8">Subtotal</div>
-                                <div class="col-sm-4">Rp.{{ number_format($total) }}</div>
+                                <div class="col-sm-4">Rp. {{ number_format($subtotal) }}</div>
                             </div>
                             <div class="d-grid" style="margin-top: 10px;">
-                                <a href="/history/make" class="btn btn-primary"  type="button" style="height: 50px;">CHECKOUT</a>
+                                <a href="/history/make" class="btn btn-primary" type="button"
+                                    style="height: 50px;">CHECKOUT</a>
                             </div>
                         </div>
                     </div>
@@ -105,7 +132,7 @@
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/templatemo.js"></script>
     <script src="assets/js/custom.js"></script>
-   <!-- End Script -->
+    <!-- End Script -->
 </body>
 
 </html>

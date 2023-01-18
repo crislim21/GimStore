@@ -8,8 +8,9 @@ class BrowseController extends Controller
 {
     public function index() {
         // dd(Game::all());
+
         return view('browse',[
-            'games' => Game::paginate(12)
+            'games' => Game::latest()->filter(request(['search']))->paginate(8)->withQueryString()
         ]);
     }
 

@@ -33,13 +33,13 @@
             <div class="card mb-3 mt-5 p-3" style="max-width: 500px">
 
                 <div class="text-center">
-                    <img style="width: 500px; height: auto;" src="{{ asset('/storage/'.$game->image) }}" class="img-fluid rounded "
+                    <img style="width: 500px; height: auto;" src="{{ $game->game_image }}" class="img-fluid rounded "
                         alt="...">
                 </div>
                 <div class="card-body ">
-                    <h5 class="card-title">{{ $game->title }}</h5>
+                    <h5 class="card-title">{{ $game->game_title }}</h5>
                     <p class="card-text">
-                        {{ $game->description }}
+                        {{ $game->game_description }}
                     </p>
                 </div>
             </div>
@@ -48,37 +48,28 @@
                     <div class="card-body">
 
                         <div class="d-flex" style="">
-                            <a href="/browse" class="btn btn-danger flex-fill pt-2" type="button"
+                            <a href="/library" class="btn btn-danger flex-fill pt-2" type="button"
                                 style="height: 45px;">Back</a>
                         </div>
-                        <div class="" style="margin-top: 10px;">
-                            <form action="{{ route('cart.store', $game->id) }}" method="post"
-                                enctype="multipart/form-data" class="d-flex">
-                                @csrf
-                                <button class="btn btn-primary flex-fill" type="submit" style="height: 50px;">Add to
-                                    Cart</button>
 
-                            </form>
-                        </div>
-                        <hr>
                         <div class="row mt-3">
-                            <div class="col-sm-8">Developer <strong>{{ $game->developer }}</strong></div>
+                            <div class="col-sm-8">Developer <strong>{{ $game->game_developer }}</strong></div>
 
                         </div>
                         <hr>
                         <div class="row mt-3">
-                            <div class="col-sm-8">Publisher <strong>{{ $game->publisher }}</strong></div>
+                            <div class="col-sm-8">Publisher <strong>{{ $game->game_publisher }}</strong></div>
 
                         </div>
                         <hr>
-                        @if ($game->price == 0)
+                        @if($game->game_price == 0)
                             <div class="row mt-3">
                                 <div class="col-sm-8">Free</div>
 
                             </div>
                         @else
                             <div class="row mt-3">
-                                <div class="col-sm-8">Rp. {{ number_format($game->price) }} </div>
+                                <div class="col-sm-8">Rp. {{ number_format($game->game_price) }} </div>
 
                             </div>
                         @endif

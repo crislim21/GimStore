@@ -14,7 +14,10 @@
                     <a class="nav-link" href="/browse">Browse</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">My Library</a>
+                    <a class="nav-link" href="/library">Library</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/history">History</a>
                 </li>
             </ul>
             @auth
@@ -41,15 +44,15 @@
                                 </form>
                             </li>
                         </ul>
-                    @else
-                        <ul class="navbar-nav ms-auto">
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">My Cart</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/login">Login</a>
-                            </li>
-                        </ul>
+            @else
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">My Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/login">Login</a>
+                    </li>
+                </ul>
 
                     @endauth
         </div>

@@ -38,6 +38,7 @@
 
             <div class="carousel-item active  ">
                 <div class="container">
+
                     <div class="row p-5">
                         <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
                             <img class="img-fluid" src="/image/cod.jpg" alt="">
@@ -45,10 +46,10 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left align-self-center">
                                 <h1 class="h1 text-white">Call of Duty®: Modern Warfare® II</h1>
-                                <p class="btn border border-dark border-2">FPS</p>
-                                <p class="btn border border-dark border-2">Action</p>
-                                <p class="btn border border-dark border-2">Multiplayer</p>
-                                <p class="btn border border-dark border-2">Singleplayer</p>
+                                <p class="btn border border-light border-2 text-white">FPS</p>
+                                <p class="btn border border-light border-2 text-white">Action</p>
+                                <p class="btn border border-light border-2 text-white">Multiplayer</p>
+                                <p class="btn border border-light border-2 text-white">Singleplayer</p>
                                 <p>
                                     Call of Duty®: Modern Warfare® II drops players into an unprecedented global
                                     conflict that features the return of the iconic Operators of Task Force 141.
@@ -67,10 +68,10 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">God of War: Ragnarok</h1>
-                                <p class="btn border border-dark border-2">Action</p>
-                                <p class="btn border border-dark border-2">Singleplayer</p>
-                                <p class="btn border border-dark border-2">Story Rich</p>
-                                <p class="btn border border-dark border-2">Adventure</p>
+                                <p class="btn border border-light border-2 text-white">Action</p>
+                                <p class="btn border border-light border-2 text-white">Singleplayer</p>
+                                <p class="btn border border-light border-2 text-white">Story Rich</p>
+                                <p class="btn border border-light border-2 text-white">Adventure</p>
                                 <p>
                                     His vengeance against the Gods of Olympus years behind him, Kratos now lives as a
                                     man in the realm of Norse Gods and monsters. It is in this harsh, unforgiving world
@@ -90,9 +91,9 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">EA SPORTS™ FIFA 23</h1>
-                                <p class="btn border border-dark border-2">Sports</p>
-                                <p class="btn border border-dark border-2">Soccer</p>
-                                <p class="btn border border-dark border-2">PvP</p>
+                                <p class="btn border border-light border-2 text-white">Sports</p>
+                                <p class="btn border border-light border-2 text-white">Soccer</p>
+                                <p class="btn border border-light border-2 text-white">PvP</p>
                                 <p>
                                     Experience the excitement of the biggest tournament in football with EA SPORTS™ FIFA
                                     23 and the men’s FIFA World Cup™ update, available on November 9 at no additional
@@ -112,9 +113,9 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">Sea of Thieves</h1>
-                                <p class="btn border border-dark border-2">Adventure</p>
-                                <p class="btn border border-dark border-2">Pirates</p>
-                                <p class="btn border border-dark border-2">Open World</p>
+                                <p class="btn border border-light border-2 text-white">Adventure</p>
+                                <p class="btn border border-light border-2 text-white">Pirates</p>
+                                <p class="btn border border-light border-2 text-white">Open World</p>
                                 <p>
                                     Sea of Thieves offers the essential pirate experience, from sailing and fighting to
                                     exploring and looting – everything you need to live the pirate life and become a
@@ -135,9 +136,9 @@
                         <div class="col-lg-6 mb-0 d-flex align-items-center">
                             <div class="text-align-left">
                                 <h1 class="h1">Genshin Impact</h1>
-                                <p class="btn border border-dark border-2">RPG</p>
-                                <p class="btn border border-dark border-2">Adventure</p>
-                                <p class="btn border border-dark border-2">Open World</p>
+                                <p class="btn border border-light border-2 text-white">RPG</p>
+                                <p class="btn border border-light border-2 text-white">Adventure</p>
+                                <p class="btn border border-light border-2 text-white">Open World</p>
                                 <p>
                                     Embark on a journey across Teyvat to find your lost sibling and seek answers from
                                     The Seven — the gods of each element. Explore this wondrous world, join forces with
@@ -166,7 +167,7 @@
     <section class="container py-5" style="background-color: ">
         <div class="row text-center pt-3">
             <div class="col-lg-6 m-auto">
-                <h1 class="h1">Hot Games</h1>
+                <h1 class="h1 fw-bold">Popular Games</h1>
                 <p>
                     Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
                     deserunt mollit anim id est laborum.
@@ -176,208 +177,49 @@
         <section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-
-                    <div class="col mb-5">
-                        <div class="card h-100 ">
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/header.jpg" style="height:170px;"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Crisis Core Final Fantasy VII - Reunion </h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute"
-                                style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/cp.jpg" style="height:170px"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Cyberpunk 2077</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute"
-                                style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/detroit.jpg" style="height:170px"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Detroit Become Human</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/elden.jpg" style="height:170px"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Elden Ring</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                    @foreach ($games as $game)
+                        <div class="col mb-5">
+                            <div class="card h-100 ">
+                                <!-- Product image-->
+                                <img class="card-img-top img-fluid" src="{{ asset('/storage/'.$game->image) }}" style="height:170px;"
+                                    alt="..." />
+                                <!-- Product details-->
+                                <div class="card-body p-4">
+                                    <div class="text-center">
+                                        <!-- Product name-->
+                                        <h5 class="fw-bolder">{{ $game->title }}</h5>
+                                        <!-- Product price-->
+                                        @if ($game->price == 0)
+                                            Free
+                                        @else
+                                            Rp. {{ number_format($game->price) }}
+                                        @endif
                                     </div>
-                                    <!-- Product price-->
-                                    $40.00
                                 </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
+                                <!-- Product actions-->
+                                <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                                    <div class="d-flex justify-content-around">
+                                        <div class="text-center">
+                                            <a href="/game/{{ $game->id }}" class="btn btn-outline-dark mt-auto">
+                                                View
+                                            </a>
+                                        </div>
+                                        <div class="text-center">
+                                            <form action="{{ route('cart.store', $game->id) }}" method="post"
+                                                enctype="multipart/form-data">
+                                                @csrf
+                                                <div class="text-center">
+                                                    <button type="submit" class="btn btn-outline-dark mt-auto">Add to
+                                                        Cart</button>
 
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/header.jpg" style="height:170px;"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Crisis Core Final Fantasy VII - Reunion </h5>
-                                    <!-- Product price-->
-                                    $40.00 - $80.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute"
-                                style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/cp.jpg" style="height:170px"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Cyberpunk 2077</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$20.00</span>
-                                    $18.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute"
-                                style="top: 0.5rem; right: 0.5rem">Sale</div>
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/detroit.jpg" style="height:170px"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Detroit Become Human</h5>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$50.00</span>
-                                    $25.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top img-fluid" src="/image/elden.jpg" style="height:170px"
-                                alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Elden Ring</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
+                                                </div>
+                                            </form>
+                                        </div>
                                     </div>
-                                    <!-- Product price-->
-                                    $40.00
                                 </div>
                             </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Add
-                                        to cart</a></div>
-                            </div>
                         </div>
-                    </div>
+                    @endforeach
 
                 </div>
             </div>

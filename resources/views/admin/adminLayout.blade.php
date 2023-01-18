@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title')</title>
-    
+
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/templatemo.css">
     <link rel="stylesheet" href="assets/css/custom.css">
@@ -28,7 +28,7 @@
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="/home">Home</a>
+                        <a class="nav-link" href="/admin/home">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="/browse">Browse</a>
@@ -37,7 +37,7 @@
                         <a class="nav-link" href="#">My Library</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Add Games</a>
+                        <a class="nav-link" href="/admin/add">Add Games</a>
                     </li>
                 </ul>
                 @auth
@@ -73,7 +73,7 @@
                                     <a class="nav-link" href="/login">Login</a>
                                 </li>
                             </ul>
-    
+
                         @endauth
             </div>
         </div>
@@ -81,7 +81,7 @@
     <div class="container-fluid">
         @yield('content')
     </div>
-    
+
     <script src="assets/js/jquery-1.11.0.min.js"></script>
     <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>

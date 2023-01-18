@@ -28,10 +28,10 @@
 
     <div class="row justify-content-center pt-5">
         <div class="col-md-6">
-            <form action="/search">
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Search Product Name" name="search"
-                        value="{{ request('search') }}">
+            <form action="/browse">
+                <div class="input-group mb-3" style="height:60px;">
+                    <input type="text" class="form-control" placeholder="Search Game" name="search"
+                        value={{ request('search') }}>
                     <button class="btn btn-primary" type="submit">Search</button>
                 </div>
             </form>
@@ -42,14 +42,14 @@
     <!-- Start Categories of The Month -->
     <section class="container py-5" style="background-color: ">
         <section class="py-5">
-            <div class="container px-4 px-lg-5 mt-5">
+            <div class="container px-4 px-lg-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
                     @foreach ($games as $game)
                         <div class="col mb-5">
                             <div class="card h-100">
                                 <!-- Product image-->
-                                <img class="card-img-top img-fluid" src="{{ $game->image }}" style="height:170px;"
+                                <img class="card-img-top img-fluid" src="{{ asset('/storage/'.$game->image) }}" style="height:170px;"
                                     alt="..." />
                                 <!-- Product details-->
                                 <div class="card-body p-4">
