@@ -13,8 +13,9 @@ use App\Http\Controllers\LibraryController;
 use App\Http\Controllers\RegisterController;
 use App\Http\Controllers\AdminGameController;
 use App\Http\Controllers\UpdateGameController;
+use App\Http\Controllers\UpdateProfileController;
 use App\Http\Controllers\DestroyCartController;
-use App\Http\Controllers\HistoryDetailController;
+use App\Http\Controllers\HistoryDetaiplController;
 use App\Http\Controllers\DeleteGameController;
 
 /*
@@ -53,6 +54,11 @@ Route::get('/library', [LibraryController::class, 'index'])->middleware('isUser'
 Route::get('library/{id}', [LibraryController::class, 'detail'])->middleware('isUser');
 
 
+Route::get('/profile', [UpdateProfileController::class, 'index'])->middleware('auth');
+Route::get('/profile/edit-profile', [UpdateProfileController::class, 'editprofile'])->middleware('auth');
+Route::put('/profile/update-profile', [UpdateProfileController::class, 'updateprofile'])->middleware('auth');
+Route::get('/profile/edit-password', [UpdateProfileController::class, 'editpassword'])->middleware('auth');
+Route::put('/profile/update-password', [UpdateProfileController::class, 'updatepassword'])->middleware('auth');
 
 Route::get('/admin/home', [AdminController::class, 'index'])->middleware('isAdmin');
 

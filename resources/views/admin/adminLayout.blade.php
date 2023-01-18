@@ -31,20 +31,11 @@
                         <a class="nav-link" href="/admin/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/browse">Browse</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">My Library</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="/admin/add">Add Games</a>
                     </li>
                 </ul>
                 @auth
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="/cart">My Cart</a>
-                        </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">

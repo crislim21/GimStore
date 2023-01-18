@@ -31,7 +31,7 @@
                             Welcome Back, {{ auth()->user()->username }}
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#"><i class="bi bi-person-circle"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="/profile"><i class="bi bi-person-circle"></i> Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
