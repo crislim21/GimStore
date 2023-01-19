@@ -41,7 +41,7 @@
 
                         <div class="col-lg-12">
                             <h4 class="text-dark">Purchased : {{ $items->created_at->format('d/m/Y') }}
-                                {{ $items->created_at->format('H:i:s') }}</h4>
+                                {{ $items->created_at }}</h4>
                             @php
                                 $count = 0;
                             @endphp

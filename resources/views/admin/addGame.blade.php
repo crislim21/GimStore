@@ -19,7 +19,7 @@
                 @enderror
                 <div class="col-auto">
                     <span id="passwordHelpInline" class="form-text">
-                        title must be 5-20 characters long.
+                        title must be 5-70 characters long.
                     </span>
                 </div>
             </div>
@@ -35,7 +35,7 @@
                 @enderror
                 <div class="col-auto">
                     <span id="passwordHelpInline" class="form-text">
-                        description must be 25-300 characters long.
+                        description must be 25-1000 characters long.
                     </span>
                 </div>
             </div>
@@ -56,7 +56,7 @@
                 </div>
 
             </div>
-            <small class="mb-4">Price minimum Rp. 5000</small>
+            <small class="mb-4">Price minimum Rp. 0</small>
             <br>
             {{-- <div class="mb-3">
           <label class="form-label">Game platform</label>
