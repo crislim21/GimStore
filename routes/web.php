@@ -15,7 +15,7 @@ use App\Http\Controllers\AdminGameController;
 use App\Http\Controllers\UpdateGameController;
 use App\Http\Controllers\UpdateProfileController;
 use App\Http\Controllers\DestroyCartController;
-use App\Http\Controllers\HistoryDetaiplController;
+use App\Http\Controllers\HistoryDetailController;
 use App\Http\Controllers\DeleteGameController;
 
 /*
