@@ -59,7 +59,7 @@
                 </button>
             </a>
 
-            <a href="/profile/edit-password">
+            <a href="/password-mail">
                 <button class="btn border-primary mx-3 text-primary">
                     Edit Password
                 </button>

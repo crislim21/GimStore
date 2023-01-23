@@ -8,6 +8,7 @@ use App\Http\Controllers\AdminController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\BrowseController;
 use App\Http\Controllers\LibraryController;
+use App\Http\Controllers\EmailController;
 
 
 use App\Http\Controllers\RegisterController;
@@ -59,6 +60,8 @@ Route::get('/profile/edit-profile', [UpdateProfileController::class, 'editprofil
 Route::put('/profile/update-profile', [UpdateProfileController::class, 'updateprofile'])->middleware('auth');
 Route::get('/profile/edit-password', [UpdateProfileController::class, 'editpassword'])->middleware('auth');
 Route::put('/profile/update-password', [UpdateProfileController::class, 'updatepassword'])->middleware('auth');
+
+Route::get('/password-mail', [EmailController::class, 'index'])->middleware('auth');
 
 Route::get('/admin/home', [AdminController::class, 'index'])->middleware('isAdmin');
 
