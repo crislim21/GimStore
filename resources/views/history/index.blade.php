@@ -40,7 +40,7 @@
                     <div class="row">
 
                         <div class="col-lg-12">
-                            <h4 class="text-dark">Purchased : {{ $items->created_at->format('d/m/Y') }}
+                            <h4 class="text-dark">Purchased :
                                 {{ $items->created_at }}</h4>
                             @php
                                 $count = 0;

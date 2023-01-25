@@ -24,15 +24,15 @@ class DatabaseSeeder extends Seeder
         // ]);
         User::create([
             'username' => 'Test User',
-            'email' => 'crislimpar@gmail.com',
-            'phonenumber' => '08123456789',
+            'email' => 'admin@gmail.com',
+            'phonenumber' => '08133122112',
             'role' => 'admin',
             'password' => bcrypt('password'),
         ]);
         User::create([
             'username' => 'Test User 2 ',
             'email' => 'cris2@gmail.com',
-            'phonenumber' => '081234567891',
+            'phonenumber' => '082322222234',
             'password' => bcrypt('password'),
         ]);
 
